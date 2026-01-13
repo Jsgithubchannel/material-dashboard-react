@@ -141,7 +141,7 @@ export default function App() {
       onClick={handleConfiguratorOpen}
     >
       <Icon fontSize="small" color="inherit">
-        settings
+        terminal
       </Icon>
     </MDBox>
   );
