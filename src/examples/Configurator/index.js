@@ -56,48 +56,48 @@ function Configurator() {
           color: "#00ff00",
         }}
       >
-        <MDBox
-          display="flex"
-          justifyContent="space-between"
-          alignItems="baseline"
-          pt={4}
-          pb={0.5}
-          px={3}
-        >
-          <MDBox>
+      <MDBox
+        display="flex"
+        justifyContent="space-between"
+        alignItems="baseline"
+        pt={4}
+        pb={0.5}
+        px={3}
+      >
+        <MDBox>
             <MDTypography variant="h5" sx={{ color: "#ffffff !important" }}>
               System Log Console
             </MDTypography>
             <MDTypography variant="body2" sx={{ color: "#00ff00 !important" }}>
               Developer Mode - Microservices Architecture
-            </MDTypography>
-          </MDBox>
-
-          <Icon
-            sx={({ typography: { size } }) => ({
-              fontSize: `${size.lg} !important`,
-              color: "#00ff00",
-              stroke: "currentColor",
-              strokeWidth: "2px",
-              cursor: "pointer",
-              transform: "translateY(5px)",
-            })}
-            onClick={handleCloseConfigurator}
-          >
-            close
-          </Icon>
+          </MDTypography>
         </MDBox>
 
-      <MDBox
+        <Icon
+            sx={({ typography: { size } }) => ({
+            fontSize: `${size.lg} !important`,
+              color: "#00ff00",
+            stroke: "currentColor",
+            strokeWidth: "2px",
+            cursor: "pointer",
+            transform: "translateY(5px)",
+          })}
+          onClick={handleCloseConfigurator}
+        >
+          close
+        </Icon>
+      </MDBox>
+
+          <MDBox
         pt={2}
         pb={3}
         px={3}
-        sx={{
+            sx={{
           height: "calc(100vh - 120px)",
-          display: "flex",
+              display: "flex",
           flexDirection: "column",
         }}
-      >
+            >
         <MDBox
           mb={2}
           display="flex"
@@ -173,8 +173,8 @@ function Configurator() {
               </MDTypography>
             ))
           )}
+          </MDBox>
         </MDBox>
-      </MDBox>
       </MDBox>
     </ConfiguratorRoot>
   );
